@@ -1,0 +1,36 @@
+body
+	{
+		background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/57786/background.svg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+		
+	
+	}
+
+#dog
+	{
+		position:relative;
+		top: 300px;
+		background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/57786/dog-walk.svg) no-repeat; 
+		width :220px;
+		height:266px;
+		transform: translate3D(200px, 50px, 0);
+				
+		animation: walking_dog 1s steps(9) infinite,move_forward 20s linear infinite;	
+		
+	}
+
+@keyframes walking_dog
+	{
+		
+		100%{background-position:0 -2376px;}
+	}
+
+@keyframes move_forward
+	{
+		0%{transform:translateX(-100px);}
+		100%{transform:translateX(1366px);}
+	}
+
+
